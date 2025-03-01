@@ -34,4 +34,5 @@ build/
 
 # Android build folder
 local.properties
-
+/android/app/.cxx
+/example/android/app/.cxx

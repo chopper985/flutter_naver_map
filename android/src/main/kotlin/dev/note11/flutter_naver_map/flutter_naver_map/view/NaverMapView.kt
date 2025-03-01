@@ -131,7 +131,7 @@ internal class NaverMapView(
     // Using AppCompat Theme.
     // default flutter android theme not support naverMap's AppCompatDialog.
     private fun setActivityThemeAppCompat() {
-        activity.setTheme(R.style.Theme_AppCompat_Light)
+        activity.setTheme(androidx.appcompat.R.style.Theme_AppCompat_Light)
     }
 
     private fun registerLifecycleCallback() {

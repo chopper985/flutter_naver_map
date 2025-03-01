@@ -98,7 +98,7 @@ class EasyDropdown<T extends Enum> extends StatelessWidget
           borderRadius: BorderRadius.circular(8)),
       padding: const EdgeInsets.only(right: 8),
       child: DropdownButton(
-          dropdownColor: getColorTheme(context).background,
+          dropdownColor: getColorTheme(context).surface,
           underline: Container(),
           isExpanded: true,
           borderRadius: BorderRadius.circular(8),
@@ -620,8 +620,9 @@ class BaseDrawerHeader extends StatelessWidget {
         decoration: BoxDecoration(
             border: Border(
                 bottom: BorderSide(
-                    color:
-                        getColorTheme(context).onBackground.withOpacity(0.28),
+                    color: getColorTheme(context)
+                        .onSurface
+                        .withValues(alpha: 0.28),
                     width: 0.2))),
         padding: padding,
         child: child);

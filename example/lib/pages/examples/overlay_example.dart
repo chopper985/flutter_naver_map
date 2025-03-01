@@ -224,7 +224,7 @@ class NOverlayMakerUtil {
           NCircleOverlay(
               id: overlayId,
               center: point,
-              color: Colors.green.withOpacity(0.3),
+              color: Colors.green.withValues(alpha: 0.3),
               radius: 100,
               outlineColor: Colors.greenAccent,
               outlineWidth: 2)
@@ -243,7 +243,7 @@ class NOverlayMakerUtil {
           NPolygonOverlay(
               id: overlayId,
               coords: heartCoords,
-              color: Colors.redAccent.withOpacity(0.5))
+              color: Colors.redAccent.withValues(alpha: .5))
         ];
       case NOverlayType.polylineOverlay:
         return [
