@@ -182,7 +182,7 @@ class _NaverMapControllerExampleState extends State<NaverMapControllerExample> {
           builder: (context) {
             return Center(
                 child: Material(
-              color: getColorTheme(context).background,
+              color: getColorTheme(context).surface,
               borderRadius: BorderRadius.circular(12),
               child: Container(
                   padding: const EdgeInsets.all(12),

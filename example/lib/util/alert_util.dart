@@ -10,14 +10,14 @@ class AlertUtil {
     Color? toastColor,
     Color? textColor,
   }) {
-    toastColor ??= getColorTheme(context).onBackground;
-    textColor ??= getColorTheme(context).background;
+    toastColor ??= getColorTheme(context).onSurface;
+    textColor ??= getColorTheme(context).surface;
 
     showToast(
       title,
       context: context,
       textStyle: getTextTheme(context).titleSmall?.copyWith(color: textColor),
-      backgroundColor: toastColor.withOpacity(0.92),
+      backgroundColor: toastColor.withValues(alpha: .92),
       toastHorizontalMargin: 24,
       position:
           const StyledToastPosition(align: Alignment.bottomCenter, offset: 36),

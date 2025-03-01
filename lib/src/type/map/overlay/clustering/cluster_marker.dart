@@ -19,7 +19,7 @@ class NClusterMarker extends _NMarkerWrapper<NClusterMarker> {
 
   Future<void> _apply(_NOverlayController overlayController) async {
     setIsVisible(true);
-    _addedOnMap(overlayController); // TODO: 삭제시 핸들링 유지 유무 확인
+    _addedOnMap(overlayController);
     _send("lSyncClusterMarker", this);
   }
 

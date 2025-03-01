@@ -77,7 +77,7 @@ class NPayload {
 
   static dynamic _convertFlutterTypes(Object value) {
     return switch (value) {
-      Color() => value.value,
+      Color() => value.toARGB32(),
       Locale() => NLocale.fromLocale(value).payload,
       EdgeInsets() => NEdgeInsets.fromEdgeInsets(value).payload,
       Size() => NSize.fromSize(value).payload,
